@@ -1,0 +1,452 @@
+.section{
+    transition-duration: 0.5s;
+    width: 100%;
+    height: 100vh;
+    margin:0 ;
+    padding: 0;
+    top: 0;
+    left: 0;
+    }
+
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("world_back.png");
+    background-attachment: fixed;
+    -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* 상단고정바 */
+
+.twitter_top {
+    scale: 0.8;
+    top: 3px;
+    left: 1840px;
+    position: fixed;
+    z-index: 9;
+}
+
+.band_top {
+    scale: 0.8;
+    top: 3px;
+    left: 1790px;
+    position: fixed;
+    z-index: 9;
+}
+
+.eng_logo {
+    scale: 0.6;
+    top: -10px;
+    left: 30px;
+    position: fixed;
+    z-index: 9;
+}
+
+.nav {
+    width: 100%;
+    height: 50px;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    position: fixed;
+    z-index: 9;
+    opacity: 90%;
+}
+
+.notice {
+    scale: 0.7;
+    position: fixed;
+    top: 10px;
+    left: 100px;
+    margin: 0;
+    padding: 0;
+    z-index: 9;
+}
+
+.world {
+    scale: 0.7;
+    position: fixed;
+    top: 10px;
+    left: 220px;
+    margin: 0;
+    padding: 0;
+    z-index: 9;
+}
+
+.position {
+    scale: 0.7;
+    position: fixed;
+    top: 10px;
+    left: 320px;
+    margin: 0;
+    padding: 0;
+    z-index: 9;
+}
+
+.system {
+    scale: 0.7;
+    position: fixed;
+    top: 10px;
+    left: 420px;
+    margin: 0;
+    padding: 0;
+    z-index: 9;
+}
+
+/* 여기까지 삭제금지 */
+
+
+/* 세계관 타이틀 고정 */
+
+.power_title{
+    position: fixed;
+    top: 250px;
+    left: 200px;
+}
+
+.power_line{
+    position: fixed;
+    top: 150px;
+    left: 730px;
+    scale: 0.8;
+}
+
+.power_menu{
+    position: fixed;
+    top: 730px;
+    left: 450px;
+    display: flex;
+    z-index: 1;
+    scale: 0.9;
+}
+
+
+/* 하단 고정 */
+
+.chapter01_ui{
+    position: fixed;
+    top: 730px;
+    left: 435px;
+    z-index: 5;
+    scale: 0.8;
+    opacity: 0%;
+    transition-duration: 0.5s;
+}
+
+.chapter02_ui{
+    position: fixed;
+    top: 730px;
+    left: 595px;
+    z-index: 5;
+    scale: 0.8;
+    opacity: 0%;
+    transition-duration: 0.5s;
+}
+
+.chapter03_ui{
+    position: fixed;
+    top: 730px;
+    left: 760px;
+    z-index: 5;
+    scale: 0.8;
+    opacity: 0%;
+    transition-duration: 0.5s;
+}
+
+.chapter04_ui{
+    position: fixed;
+    top: 730px;
+    left: 927px;
+    z-index: 5;
+    scale: 0.8;
+    opacity: 0%;
+    transition-duration: 0.5s;
+}
+
+.chapter05_ui{
+    position: fixed;
+    top: 730px;
+    left: 1093px;
+    z-index: 5;
+    scale: 0.8;
+    opacity: 0%;
+    transition-duration: 0.5s;
+}
+
+.chapter06_ui{
+    position: fixed;
+    top: 730px;
+    left: 1240px;
+    z-index: 5;
+    scale: 0.8;
+    opacity: 0%;
+    transition-duration: 0.5s;
+}
+
+
+/* 일반ui */
+
+.chapter01{
+    margin-right: 50px;
+}
+
+.chapter02{
+    margin-right: 50px;
+}
+
+.chapter03{
+    margin-right: 50px;
+}
+
+.chapter04{
+    margin-right: 50px;
+}
+
+.chapter05{
+    margin-right: 50px;
+}
+
+/* 내용 */
+
+.world_01{
+    position: absolute;
+    top: 320px;
+    left: 810px;
+    padding: 0;
+    margin: 0;
+    scale: 0.9;
+}
+
+.world_02{
+    position: absolute;
+    top: 1150px;
+    left: 800px;
+    padding: 0;
+    margin: 0;
+    scale: 0.9;
+}
+
+.world_map_img{
+    position: fixed;
+    top: 30px;
+    left: 120px;
+    scale: 0.8;
+    z-index: 999;
+}
+
+.world_map_img_close{
+    position: fixed;
+    bottom: 150px;
+    right: 380px;
+    scale: 0.8;
+    z-index: 999;
+}
+
+
+.world_map_back{
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    opacity: 95%;
+    z-index: 998;
+
+}
+
+.world_map{
+    display: none;
+}
+
+/* 맵 추가 */
+
+.world_click_01{
+    position: fixed;
+    top: 425px;
+    left: 710px;
+    z-index: 9999;
+    scale: 0.8;
+}
+
+.world_click_01:hover{
+    scale: 0.9;
+    transition-duration: 0.5s;
+}
+
+.world_click_02{
+    position: fixed;
+    top: 605px;
+    left: 960px;
+    z-index: 9999;
+    scale: 0.8;
+}
+
+.world_click_02:hover{
+    scale: 0.9;
+    transition-duration: 0.5s;
+}
+
+.world_click_03{
+    position: fixed;
+    top: 490px;
+    left: 1115px;
+    z-index: 9999;
+    scale: 0.8;
+}
+
+.world_click_03:hover{
+    scale: 0.9;
+    transition-duration: 0.5s;
+}
+
+.world_click_04{
+    position: fixed;
+    top: 560px;
+    left: 1275px;
+    z-index: 9999;
+    scale: 0.8;
+}
+
+.world_click_04:hover{
+    scale: 0.9;
+    transition-duration: 0.5s;
+}
+
+.world_click_05{
+    position: fixed;
+    top: 685px;
+    left: 1200px;
+    z-index: 9999;
+    scale: 0.8;
+}
+
+.world_click_05:hover{
+    scale: 0.9;
+    transition-duration: 0.5s;
+}
+
+.world_click_06{
+    position: fixed;
+    top: 235px;
+    left: 1305px;
+    z-index: 9999;
+    scale: 0.8;
+}
+
+.world_click_06:hover{
+    scale: 0.9;
+    transition-duration: 0.5s;
+}
+
+.world_map_01{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+}
+.world_map_close_01{
+    position: fixed;
+    top: 450px;
+    left: 1800px;
+    z-index: 99999;
+    scale: 0.8;
+}
+
+.world_map_02{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+}
+.world_map_close_02{
+    position: fixed;
+    top: 450px;
+    left: 1800px;
+    z-index: 99999;
+    scale: 0.8;
+}
+
+.world_map_03{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+}
+.world_map_close_03{
+    position: fixed;
+    top: 450px;
+    left: 1800px;
+    z-index: 99999;
+    scale: 0.8;
+}
+
+.world_map_04{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+}
+.world_map_close_04{
+    position: fixed;
+    top: 450px;
+    left: 1800px;
+    z-index: 99999;
+    scale: 0.8;
+}
+
+.world_map_05{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+}
+.world_map_close_05{
+    position: fixed;
+    top: 450px;
+    left: 1800px;
+    z-index: 99999;
+    scale: 0.8;
+}
+
+.world_map_06{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+}
+.world_map_close_06{
+    position: fixed;
+    top: 450px;
+    left: 1800px;
+    z-index: 99999;
+    scale: 0.8;
+}
+
+
+.map_01{
+    display: none;
+}
+.map_02{
+    display: none;
+}
+.map_03{
+    display: none;
+}
+.map_04{
+    display: none;
+}
+.map_05{
+    display: none;
+}
+.map_06{
+    display: none;
+}

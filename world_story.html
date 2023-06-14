@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="world_story.css">
+
+    <title>세계관</title>
+</head>
+
+<body>
+
+
+    <!--상단-->
+    <div class="nav">
+        <div class="menu_text">
+            <div class="notice"><a href="notice.html"><img src="notice.png"></a></div>
+            <div class="world"><a href="world.html"><img src="world_top.png"></a></div>
+            <div class="position"><a href="system.html"><img src="system_top.png"></a></div>
+            <!-- <div class="system"><a href="system.html"><img src="system_top.png"></a></div> -->
+        </div>
+
+    </div>
+
+    <!--상단sns-->
+
+    <div class="sns_top">
+        <div class="eng_logo"><a href="index.html"><img src="eng_logo.png"></a></div>
+        <div class="twitter_top">
+            <a href="https://twitter.com/origin_2023"><img src="twitter_top.png"></a>
+        </div>
+        <div class="band_top">
+            <a href="https://band.us/band/90907714"><img src="band_top.png"></a>
+        </div>
+    </div>
+
+    <!--섹션-->
+    <!-- <div class="srcoll_ico"><img src="scroll.png"></div> -->
+    <div class="container" id="container">
+        <div class="section">
+            <div class="start_01"><img src="world_story_01.png"></div>
+        </div>
+
+        <div class="section">
+            <div class="start_02"><img src="world_story_02.png"></div>
+        </div>
+        <div class="section">
+            <div class="start_03"><img src="world_story_03.png"></div>
+        </div>
+        <div class="section">
+            <div class="start_04"><img src="world_story_04.png"></div>
+        </div>
+        <div class="section">
+            <div class="start_05"><img src="world_story_05.png"></div>
+        </div>
+        <div class="section">
+            <div class="start_06"><img src="world_story_06.png"></div>
+        </div>
+        <div class="section">
+            <div class="start_07"><img src="world_story_07.png"></div>
+        </div>
+        <div class="section">
+            <div class="start_08"><img src="world_story_08.png"></div>
+        </div>
+        <div class="section">
+            <div class="start_09"><img src="world_story_09.png"></div>
+        </div>
+        <div class="section">
+            <div class="start_10"><img src="world_story_10.png"></div>
+        </div>
+        <div class="section">
+            <div class="start_11"><img src="world_story_11.png"></div>
+
+            <div class="start_11_btn"><img src="world_story_11_btn.png"></div>
+        </div>
+
+        
+    </div>
+
+    
+
+
+
+    <script>
+
+        //전체 공지사항
+        function first() {
+            document.getElementById('container').style.display = 'none';
+            document.getElementById('power_page').style.display = 'block';
+        }
+
+        // 챕1
+        function uiopen01() {
+            document.getElementById('chapter01_ui').style.display = 'block';
+
+        }
+
+        function uiclose01() {
+            document.getElementById('chapter01_ui').style.display = 'none';
+
+        }
+        // 챕2
+        function uiopen02() {
+            document.getElementById('chapter02_ui').style.display = 'block';
+
+        }
+
+        function uiclose02() {
+            document.getElementById('chapter02_ui').style.display = 'none';
+
+        }
+        // 챕3
+        function uiopen03() {
+            document.getElementById('chapter03_ui').style.display = 'block';
+
+        }
+
+        function uiclose03() {
+            document.getElementById('chapter03_ui').style.display = 'none';
+
+        }
+        // 챕4
+        function uiopen04() {
+            document.getElementById('chapter04_ui').style.display = 'block';
+
+        }
+
+        function uiclose04() {
+            document.getElementById('chapter04_ui').style.display = 'none';
+
+        }
+
+        // 챕5
+        function uiopen05() {
+            document.getElementById('chapter05_ui').style.display = 'block';
+
+        }
+
+        function uiclose05() {
+            document.getElementById('chapter05_ui').style.display = 'none';
+
+        }
+        // 챕6
+        function uiopen06() {
+            document.getElementById('chapter06_ui').style.display = 'block';
+
+        }
+
+        function uiclose06() {
+            document.getElementById('chapter06_ui').style.display = 'none';
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // 스크롤 애니메이션
+        window.onload = function () {
+            const elm = document.querySelectorAll('.section');
+            const elmCount = elm.length;
+            elm.forEach(function (item, index) {
+                item.addEventListener('mousewheel', function (event) {
+                    event.preventDefault();
+                    let delta = 0;
+
+                    if (!event) event = window.event;
+                    if (event.wheelDelta) {
+                        delta = event.wheelDelta / 100;
+                        if (window.opera) delta = -delta;
+                    }
+                    else if (event.detail)
+                        delta = -event.detail / 3;
+
+                    let moveTop = window.scrollY;
+                    let elmSelector = elm[index];
+
+                    // wheel down : move to next section
+                    if (delta < 0) {
+                        if (elmSelector !== elmCount - 1) {
+                            try {
+                                moveTop = window.pageYOffset + elmSelector.nextElementSibling.getBoundingClientRect().top;
+                            } catch (e) { }
+                        }
+                    }
+                    // wheel up : move to previous section
+                    else {
+                        if (elmSelector !== 0) {
+                            try {
+                                moveTop = window.pageYOffset + elmSelector.previousElementSibling.getBoundingClientRect().top;
+                            } catch (e) { }
+                        }
+                    }
+
+                    const body = document.querySelector('html');
+                    window.scrollTo({ top: moveTop, left: 0, behavior: 'smooth' });
+                });
+            });
+        }
+
+
+    </script>
+
+
+
+
+
+
+
+</body>
+
+</html>

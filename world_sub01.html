@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="world_sub01.css">
+
+    <title>세계관</title>
+</head>
+
+<body>
+
+
+    <!--상단-->
+    <div class="nav">
+        <div class="menu_text">
+            <div class="notice"><a href="notice.html"><img src="notice.png"></a></div>
+            <div class="world"><a href="world.html"><img src="world_top.png"></a></div>
+            <div class="position"><a href="system.html"><img src="system_top.png"></a></div>
+            <!-- <div class="system"><a href="system.html"><img src="system_top.png"></a></div> -->
+        </div>
+
+    </div>
+
+    <!--상단sns-->
+
+    <div class="sns_top">
+        <div class="eng_logo"><a href="index.html"><img src="eng_logo.png"></a></div>
+        <div class="twitter_top">
+            <a href="https://twitter.com/origin_2023"><img src="twitter_top.png"></a>
+        </div>
+        <div class="band_top">
+            <a href="https://band.us/band/90907714"><img src="band_top.png"></a>
+        </div>
+    </div>
+
+    <!-- 고정부분 -->
+    <div class="power_title"><img src="world_title.png"></div>
+
+    <div class="power_line"><img src="world_line.png"></div>
+
+    <div class="chapter01_ui" id="chapter01_ui" onmouseover="uiopen01()" onmouseout="uiclose()"><a href="#"><img src="select_ui.png"></a></div>
+    <div class="chapter02_ui" id="chapter02_ui" onmouseover="uiopen02()" onmouseout="uiclose()"><a href="world_sub02.html"><img src="select_ui.png"></a></div>
+    <div class="chapter03_ui" id="chapter03_ui" onmouseover="uiopen03()" onmouseout="uiclose()"><a href="world_sub03.html"><img src="select_ui.png"></a></div>
+    <div class="chapter04_ui" id="chapter04_ui" onmouseover="uiopen04()" onmouseout="uiclose()"><a href="world_sub04.html"><img src="select_ui.png"></a></div>
+    <div class="chapter05_ui" id="chapter05_ui" onmouseover="uiopen05()" onmouseout="uiclose()" onclick="mapopen()"><a href="#"><img src="select_ui.png"></a></div>
+    <div class="chapter06_ui" id="chapter06_ui" onmouseover="uiopen06()" onmouseout="uiclose()"><a href="world_sub06.html"><img src="select_ui.png"></a></div>
+
+    <!-- ui -->
+
+    <div class="power_menu">
+
+
+        <div class="chapter01" onmouseover="uiopen01()" onmouseout="uiclose()"><img src="world_chapter_01.png">
+        </div>
+
+        <div class="chapter02" onmouseover="uiopen02()" onmouseout="uiclose()"><img src="world_chapter_02.png">
+        </div>
+
+        <div class="chapter03" onmouseover="uiopen03()" onmouseout="uiclose()"><img src="world_chapter_03.png">
+        </div>
+
+        <div class="chapter04" onmouseover="uiopen04()" onmouseout="uiclose()"><img src="world_chapter_04.png">
+        </div>
+
+        <div class="chapter05" onmouseover="uiopen05()" onmouseout="uiclose()" onclick="mapopen()"><img src="world_chapter_05.png">
+        </div>
+
+        <div class="chapter06" onmouseover="uiopen06()" onmouseout="uiclose()"><img src="world_chapter_06.png">
+        </div>
+
+    </div>
+
+    <!-- 이거 지도 -->
+    <div class="section">
+    <div class="world_map" id="world_map">
+
+        <!-- 맵버튼 -->
+        <div class="world_click_01" id="world_click_01" onclick="mapnoteopen01()"><img src="world_map_click.png"></div>
+        <div class="world_click_02" id="world_click_02" onclick="mapnoteopen02()"><img src="world_map_click.png"></div>
+        <div class="world_click_03" id="world_click_03" onclick="mapnoteopen03()"><img src="world_map_click.png"></div>
+        <div class="world_click_04" id="world_click_04" onclick="mapnoteopen04()"><img src="world_map_click.png"></div>
+        <div class="world_click_05" id="world_click_05" onclick="mapnoteopen05()"><img src="world_map_click.png"></div>
+        <div class="world_click_06" id="world_click_06" onclick="mapnoteopen06()"><img src="world_map_click.png"></div>
+
+        <!-- 맵이미지 -->
+        <div class="world_map_note" id="world_map_note">
+
+            <div class="map_01" id="map_01">
+                <div class="world_map_01" id="world_map_01" ><img src="world_map_01.png"></div>
+                <div class="world_map_close_01" id="world_map_close_01" onclick="mapnoteclose01()"><img src="world_map_close.png"></div>
+            </div>
+            <div class="map_02" id="map_02">
+                <div class="world_map_02" id="world_map_02"><img src="world_map_02.png"></div>
+                <div class="world_map_close_02" id="world_map_close_02" onclick="mapnoteclose02()"><img src="world_map_close.png"></div>
+            </div>
+
+            <div class="map_03" id="map_03">
+                <div class="world_map_03" id="world_map_03"><img src="world_map_03.png"></div>
+                <div class="world_map_close_03" id="world_map_close_03" onclick="mapnoteclose03()"><img src="world_map_close.png"></div>
+            </div>
+            <div class="map_04" id="map_04">
+                <div class="world_map_04" id="world_map_04"><img src="world_map_04.png"></div>
+                <div class="world_map_close_04" id="world_map_close_04" onclick="mapnoteclose04()"><img src="world_map_close.png"></div>
+            </div>
+            
+            <div class="map_05" id="map_05">
+                <div class="world_map_05" id="world_map_05"><img src="world_map_05.png"></div>
+                <div class="world_map_close_05" id="world_map_close_05" onclick="mapnoteclose05()"><img src="world_map_close.png"></div>
+            </div>
+            
+            <div class="map_06" id="map_06">
+                <div class="world_map_06" id="world_map_06"><img src="world_map_06.png"></div>
+                <div class="world_map_close_06" id="world_map_close_06" onclick="mapnoteclose06()"><img src="world_map_close.png"></div>
+            </div>
+    
+        </div>
+
+        <div class="world_map_img"><img src="world_map_img.png"></div>
+        <div class="world_map_img_close" onclick="mapclose()"><img src="world_map_close.png"></div>
+        <div class="world_map_back"></div>
+    </div>
+</div>
+
+    <!-- 여기에 스크롤 내용넣기 -->
+
+    <div class="chapter01_page" id="chapter01_page">
+        <div class="section">
+            <div class="world_01"><img src="world_text_01.png"></div>
+        </div>
+    </div>
+
+    <script>
+
+        //맵 부연설명
+
+        function mapnoteopen01() {
+            document.getElementById('map_01').style.display = 'block';
+        }
+
+        function mapnoteopen02() {
+            document.getElementById('map_02').style.display = 'block';
+        }
+
+        function mapnoteopen03() {
+            document.getElementById('map_03').style.display = 'block';
+        }
+
+        function mapnoteopen04() {
+            document.getElementById('map_04').style.display = 'block';
+        }
+
+        function mapnoteopen05() {
+            document.getElementById('map_05').style.display = 'block';
+        }
+
+        function mapnoteopen06() {
+            document.getElementById('map_06').style.display = 'block';
+        }
+
+
+        // 부연설명 닫기
+        function mapnoteclose01() {
+            document.getElementById('map_01').style.display = 'none';
+        }
+
+        function mapnoteclose02() {
+            document.getElementById('map_02').style.display = 'none';
+        }
+
+        function mapnoteclose03() {
+            document.getElementById('map_03').style.display = 'none';
+        }
+
+        function mapnoteclose04() {
+            document.getElementById('map_04').style.display = 'none';
+        }
+
+        function mapnoteclose05() {
+            document.getElementById('map_05').style.display = 'none';
+        }
+
+        function mapnoteclose06() {
+            document.getElementById('map_06').style.display = 'none';
+        }
+
+
+        //chapter05eopen
+
+        function mapopen() {
+            document.getElementById('world_map').style.display = 'block';
+
+        }
+
+        function mapclose() {
+            document.getElementById('world_map').style.display = 'none';
+
+        }
+
+
+        //마우스 오버
+
+        // 챕1
+        function uiopen01() {
+            document.getElementById('chapter01_ui').style.opacity='100%';
+            document.getElementById('chapter02_ui').style.opacity='0%';
+            document.getElementById('chapter03_ui').style.opacity='0%';
+            document.getElementById('chapter04_ui').style.opacity='0%';
+            document.getElementById('chapter05_ui').style.opacity='0%';
+            document.getElementById('chapter06_ui').style.opacity='0%';
+        }
+        function uiclose() {
+            document.getElementById('chapter01_ui').style.opacity='100%';
+            document.getElementById('chapter02_ui').style.opacity='0%';
+            document.getElementById('chapter03_ui').style.opacity='0%';
+            document.getElementById('chapter04_ui').style.opacity='0%';
+            document.getElementById('chapter05_ui').style.opacity='0%';
+            document.getElementById('chapter06_ui').style.opacity='0%';
+        }
+        // 챕2
+        function uiopen02() {
+            document.getElementById('chapter01_ui').style.opacity='0%';
+            document.getElementById('chapter02_ui').style.opacity='100%';
+            document.getElementById('chapter03_ui').style.opacity='0%';
+            document.getElementById('chapter04_ui').style.opacity='0%';
+            document.getElementById('chapter05_ui').style.opacity='0%';
+            document.getElementById('chapter06_ui').style.opacity='0%';
+        }
+
+        
+        // 챕3
+        function uiopen03() {
+            document.getElementById('chapter01_ui').style.opacity='0%';
+            document.getElementById('chapter02_ui').style.opacity='0%';
+            document.getElementById('chapter03_ui').style.opacity='100%';
+            document.getElementById('chapter04_ui').style.opacity='0%';
+            document.getElementById('chapter05_ui').style.opacity='0%';
+            document.getElementById('chapter06_ui').style.opacity='0%';
+        }
+
+        
+        // 챕4
+        function uiopen04() {
+            document.getElementById('chapter01_ui').style.opacity='0%';
+            document.getElementById('chapter02_ui').style.opacity='0%';
+            document.getElementById('chapter03_ui').style.opacity='0%';
+            document.getElementById('chapter04_ui').style.opacity='100%';
+            document.getElementById('chapter05_ui').style.opacity='0%';
+            document.getElementById('chapter06_ui').style.opacity='0%';
+        }
+
+        
+        // 챕5
+        function uiopen05() {
+            document.getElementById('chapter01_ui').style.opacity='0%';
+            document.getElementById('chapter02_ui').style.opacity='0%';
+            document.getElementById('chapter03_ui').style.opacity='0%';
+            document.getElementById('chapter04_ui').style.opacity='0%';
+            document.getElementById('chapter05_ui').style.opacity='100%';
+            document.getElementById('chapter06_ui').style.opacity='0%';
+        }
+
+        
+        // 챕6
+        function uiopen06() {
+            document.getElementById('chapter01_ui').style.opacity='0%';
+            document.getElementById('chapter02_ui').style.opacity='0%';
+            document.getElementById('chapter03_ui').style.opacity='0%';
+            document.getElementById('chapter04_ui').style.opacity='0%';
+            document.getElementById('chapter05_ui').style.opacity='0%';
+            document.getElementById('chapter06_ui').style.opacity='100%';
+        }
+
+        
+
+        // 스크롤 애니메이션
+        window.onload = function () {
+            const elm = document.querySelectorAll('.section');
+            const elmCount = elm.length;
+            elm.forEach(function (item, index) {
+                item.addEventListener('mousewheel', function (event) {
+                    event.preventDefault();
+                    let delta = 0;
+
+                    if (!event) event = window.event;
+                    if (event.wheelDelta) {
+                        delta = event.wheelDelta / 100;
+                        if (window.opera) delta = -delta;
+                    }
+                    else if (event.detail)
+                        delta = -event.detail / 3;
+
+                    let moveTop = window.scrollY;
+                    let elmSelector = elm[index];
+
+                    // wheel down : move to next section
+                    if (delta < 0) {
+                        if (elmSelector !== elmCount - 1) {
+                            try {
+                                moveTop = window.pageYOffset + elmSelector.nextElementSibling.getBoundingClientRect().top;
+                            } catch (e) { }
+                        }
+                    }
+                    // wheel up : move to previous section
+                    else {
+                        if (elmSelector !== 0) {
+                            try {
+                                moveTop = window.pageYOffset + elmSelector.previousElementSibling.getBoundingClientRect().top;
+                            } catch (e) { }
+                        }
+                    }
+
+                    const body = document.querySelector('html');
+                    window.scrollTo({ top: moveTop, left: 0, behavior: 'smooth' });
+                });
+            });
+        }
+
+
+    </script>
+
+
+
+
+
+
+
+</body>
+
+</html>

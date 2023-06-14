@@ -1,0 +1,326 @@
+.section {
+    width: 100%;
+    height: 980px;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 2;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: url("index_back.png");
+}
+
+.twitter {
+    position: absolute;
+    top: 4100px;
+    left: 450px;
+}
+
+.twitter:hover {
+    scale: 1.03;
+    transition-duration: 0.5s;
+}
+
+.band:hover {
+    scale: 1.03;
+    transition-duration: 0.5s;
+}
+
+.band {
+    position: absolute;
+    top: 4100px;
+    left: 920px;
+}
+
+.notice_btn {
+    position: fixed;
+    top: 100px;
+}
+
+.world_btn {
+    position: fixed;
+    top: 150px;
+}
+
+.position_btn {
+    position: fixed;
+    top: 200px;
+}
+
+.story_btn {
+    position: fixed;
+    top: 250px;
+}
+
+
+.world {
+    position: absolute;
+    top: 3200px;
+    left: 325px;
+    transition-duration: 0.5s;
+}
+
+.notice_click{
+    position: absolute;
+    top:3500px;
+    left: 490px;
+    scale: 0.8;
+    transition-duration: 0.5s;
+    opacity: 0%;
+    z-index: 9;
+}
+
+.world_click {
+    position: absolute;
+    top: 3410px;
+    left: 505px;
+    z-index: 9;
+}
+
+/* 세계관 */
+.position {
+    position: absolute;
+    top: 3200px;
+    left: 715px;
+    transition-duration: 0.5s;
+}
+
+.position_click {
+    position: absolute;
+    top: 3410px;
+    left: 910px;
+    z-index: 9;
+}
+
+.world_click_{
+    position: absolute;
+    top:3500px;
+    left: 880px;
+    scale: 0.8;
+    transition-duration: 0.5s;
+    opacity: 0%;
+    z-index: 9;
+}
+
+
+.story {
+    position: absolute;
+    top: 3200px;
+    left: 1100px;
+    transition-duration: 0.5s;
+}
+
+.story_click {
+    position: absolute;
+    top: 3410px;
+    left: 1295px;
+    z-index: 3;
+} 
+
+.system_click{
+    position: absolute;
+    top:3500px;
+    left: 1265px;
+    scale: 0.8;
+    transition-duration: 0.5s;
+    opacity: 0%;
+    z-index: 9;
+}
+
+
+/* .story_click {
+    position: absolute;
+    top: 3500px;
+    left: 1260px;
+    z-index: 3;
+} */
+
+
+
+
+.shadow {
+    position: absolute;
+    top: 3550px;
+    left: 330px;
+}
+
+.sns_top {
+    position: fixed;
+    z-index: 2;
+}
+
+.back_img {
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* .nav{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 99999;
+    position: fixed;
+
+} */
+
+.menu_box {
+    background-color: black;
+    position: fixed;
+    width: 300px;
+    ;
+    height: 100vh;
+    top: 0;
+    left: 0px;
+    z-index: 10;
+    display: none;
+}
+
+.menu_btn {
+    left: 0px;
+    top: 100px;
+    position: fixed;
+
+}
+
+
+
+.home_left {
+    width: 50%;
+    height: auto;
+}
+
+
+
+.notice_top {
+    top: -20px;
+    left: 80px;
+    position: relative;
+    display: inline;
+
+}
+
+.world_top {
+    top: -20px;
+    left: 110px;
+    position: relative;
+    display: inline;
+
+}
+
+.system_top {
+    top: -20px;
+    left: 140px;
+    position: relative;
+    display: inline;
+
+}
+
+.story_top {
+    top: -20px;
+    left: 170px;
+    position: relative;
+    display: inline;
+
+}
+
+.eng_logo {
+    scale: 0.6;
+    top: -10px;
+    left: 30px;
+    position: absolute;
+    display: fixed;
+}
+
+.twitter_top {
+    scale: 0.8;
+    top: 3px;
+    left: 1840px;
+    position: absolute;
+}
+
+.band_top {
+    scale: 0.8;
+    top: 3px;
+    left: 1790px;
+    position: absolute;
+}
+
+.logo {
+    position: relative;
+    top: 90px;
+    left: 500px;
+    width: 80;
+    z-index: 2;
+}
+
+.form_top {
+    position: relative;
+    top: 70px;
+    left: 780px;
+    z-index: 2;
+}
+
+.main_cut {
+    position: absolute;
+    top: 2000px;
+    left: 330px;
+    z-index: 9;
+    scale: 0.8;
+}
+
+.form_back {
+    top: 70px;
+    position: relative;
+    left: 330px;
+    z-index: 1;
+    scale: 0.9;
+}
+
+.container {
+    z-index: 999;
+}
+
+.form_btn {
+    top: 1250px;
+    left: 430px;
+    position: absolute;
+    z-index: 9;
+    scale: 0.8;
+}
+
+.form_check {
+    top: 1250px;
+    left: 1170px;
+    position: absolute;
+    z-index: 9;
+    scale: 0.8;
+}
+
+
+.left_img {
+    top: 300px;
+    left: 1650px;
+    position: absolute;
+    display: block;
+}
+
+.left_img_btn {
+    top: 330px;
+    left: 1850px;
+    position: absolute;
+    display: block;
+    z-index: 3;
+}

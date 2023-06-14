@@ -1,0 +1,294 @@
+.section{
+    transition-duration: 0.5s;
+    width: 100%;
+    height: 100vh;
+    margin:0 ;
+    padding: 0;
+    top: 0;
+    left: 0;
+    }
+
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("world_back.png");
+    background-attachment: fixed;
+    -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* 상단고정바 */
+
+.twitter_top {
+    scale: 0.8;
+    top: 3px;
+    left: 1840px;
+    position: fixed;
+    z-index: 9;
+}
+
+.band_top {
+    scale: 0.8;
+    top: 3px;
+    left: 1790px;
+    position: fixed;
+    z-index: 9;
+}
+
+.eng_logo {
+    scale: 0.6;
+    top: -10px;
+    left: 30px;
+    position: fixed;
+    z-index: 9;
+}
+
+.nav {
+    width: 100%;
+    height: 50px;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    position: fixed;
+    z-index: 9;
+    opacity: 90%;
+}
+
+.notice {
+    scale: 0.7;
+    position: fixed;
+    top: 10px;
+    left: 100px;
+    margin: 0;
+    padding: 0;
+    z-index: 9;
+}
+
+.world {
+    scale: 0.7;
+    position: fixed;
+    top: 10px;
+    left: 220px;
+    margin: 0;
+    padding: 0;
+    z-index: 9;
+}
+
+.position {
+    scale: 0.7;
+    position: fixed;
+    top: 10px;
+    left: 320px;
+    margin: 0;
+    padding: 0;
+    z-index: 9;
+}
+
+.system {
+    scale: 0.7;
+    position: fixed;
+    top: 10px;
+    left: 420px;
+    margin: 0;
+    padding: 0;
+    z-index: 9;
+}
+
+/* 여기까지 삭제금지 */
+
+/* .srcoll_ico{
+    position: fixed;
+    scale: 0.6;
+    top: 830px;
+    left: 925px;
+} */
+
+.srcoll_ico:hover{
+    opacity: 50%;
+    transition-duration: 1s;
+}
+
+.start_01{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    scale: 0.7;
+}
+.start_02{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    scale: 0.7;
+}
+.start_03{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    scale: 0.7;
+}
+.start_04{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    scale: 0.7;
+}
+
+.start_05{
+    position: absolute;
+    scale: 0.7;
+    display: flex;
+    top: 3850px;
+    left: 150px;
+}
+
+.power:hover{
+    scale: 1.03;
+    transition-duration: 1s;
+}
+
+.ad:hover{
+    scale: 1.03;
+    transition-duration: 1s;
+}
+
+.map:hover{
+    scale: 1.03;
+    transition-duration: 1s;
+}
+
+/* 세계관설명부분 */
+
+.power_page{
+    display: none;
+}
+
+
+.power_title{
+    position: fixed;
+    top: 250px;
+    left: 200px;
+}
+
+.power_line{
+    position: fixed;
+    top: 150px;
+    left: 730px;
+    scale: 0.8;
+}
+
+.power_menu{
+    position: fixed;
+    top: 730px;
+    left: 450px;
+    display: flex;
+    z-index: 1;
+    scale: 0.9;
+}
+
+.power_01{
+    position: absolute;
+    top: 200px;
+    left: 840px;
+    scale: 0.9;
+
+}
+
+.power_02{
+    position: absolute;
+    top: 750px;
+    left: 840px;
+    scale: 0.9;
+
+}
+
+
+
+/* 하단 고정 */
+
+.chapter01_ui{
+    position: fixed;
+    top: 730px;
+    left: 435px;
+    z-index: 5;
+    scale: 0.8;
+    display: none;
+}
+
+.chapter02_ui{
+    position: fixed;
+    top: 730px;
+    left: 595px;
+    z-index: 5;
+    scale: 0.8;
+    display: none;
+}
+
+.chapter03_ui{
+    position: fixed;
+    top: 730px;
+    left: 760px;
+    z-index: 5;
+    scale: 0.8;
+    display: none;
+}
+
+.chapter04_ui{
+    position: fixed;
+    top: 730px;
+    left: 927px;
+    z-index: 5;
+    scale: 0.8;
+    display: none;
+}
+
+.chapter05_ui{
+    position: fixed;
+    top: 730px;
+    left: 1093px;
+    z-index: 5;
+    scale: 0.8;
+    display: none;
+}
+
+.chapter06_ui{
+    position: fixed;
+    top: 730px;
+    left: 1240px;
+    z-index: 5;
+    scale: 0.8;
+    display: none;
+}
+
+
+
+/* 일반ui */
+
+.chapter01{
+    margin-right: 50px;
+}
+
+.chapter02{
+    margin-right: 50px;
+}
+
+.chapter03{
+    margin-right: 50px;
+}
+
+.chapter04{
+    margin-right: 50px;
+}
+
+.chapter05{
+    margin-right: 50px;
+}
+

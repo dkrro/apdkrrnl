@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="position.css">
+
+  <title>position</title>
+</head>
+
+<body>
+
+
+  <!--스토리없애기-->
+  <div class="nav">
+    <!-- <div class="menu_btn"><img src="menu_btn.png"></div> -->
+    <div class="menu_box" id="menu_box">
+
+      <div class="menu_name">
+        <ul>
+          <li class="notice_btn"><a href="notice.html"><img src="notice.png"></a></li>
+          <li class="world_btn"><a href="world.html"><img src="world_top.png"></a></li>
+          <li class="position_btn"><a href="position.html"><img src="system_top.png"></a></li>
+          <li class="story_btn"><a href="#"><img src="story_top.png"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 고정 -->
+
+  <div class="sns_top">
+    <div class="eng_logo"><a href="index.html"><img src="eng_logo.png"></a></div>
+    <div class="twitter_top">
+      <a href="https://twitter.com/origin_2023"><img src="twitter_top.png"></a>
+    </div>
+    <div class="band_top">
+      <a href="https://band.us/band/90907714"><img src="band_top.png"></a>
+    </div>
+  </div>
+
+
+
+  <!-- 포지션메뉴 -->
+
+  <div class="position_menu" id="position_menu">
+    <!-- 딜러 -->
+
+    <div class="dealer_click" id="notice_title" onmouseover="noticeturn(),clickopen()"
+      onmouseout="noticeturnback(),clickclose()" onclick="dealeropen()"><img src="position_dealer_text.png"></div>
+    <div class="world" id="world" onmouseover="noticeturn(),clickopen()" onmouseout="noticeturnback(),clickclose()" >
+      <img src="world_.png">
+    </div>
+    <div class="notice_click" id="notice_click"><img src="click.png"></div>
+
+
+    <!-- 탱커 -->
+
+    <div class="position_click" id="position_title" onmouseover="worldturn(),worldclickopen()"
+      onmouseout="worldturnback(),worldclickclose()" onclick="tankeropen()"><img src="position_tanker_text.png"></div>
+    <div class="position" id="position" onmouseover="worldturn(),worldclickopen()"
+      onmouseout="worldturnback(),worldclickclose()"><img src="position_.png"></div>
+    <div class="world_click_" id="world_click_"><img src="click.png"></div>
+
+
+    <!-- 힐러 -->
+
+    <div class="story_click" id="system_title" onmouseover="systemturn(),systemclickopen()"
+      onmouseout="systemturnback(),systemclickclose()" onclick="healeropen()"><img src="position_healer_text.png">
+    </div>
+    <div class="story" id="system" onmouseover="systemturn(),systemclickopen()"
+      onmouseout="systemturnback(),systemclickclose()"><img src="system_.png"></div>
+    <div class="system_click" id="system_click"><img src="click.png"></div>
+
+  </div>
+
+  <!-- 하단 메뉴 -->
+  <div class="small_menu">
+    <div class="menu_ico" id="menu_ico">
+      <div class="dealer_ico" onclick="dealeropen()"><img src="position_dealer_btn.png"></div>
+      <div class="tanker_ico" onclick="tankerreopen()"><img src="position_tanker_btn.png"></div>
+      <div class="healer_ico" onclick="healerreopen()"><img src="position_healer_btn.png"></div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="dealer_img_01" id="dealer_img_01"><img src="dealer_img_01.png"></div>
+  <div class="dealer_img_02" id="dealer_img_02"><img src="dealer_img_02.png"></div>
+  <div class="dealer_img_03" id="dealer_img_03"><img src="dealer_img_03.png"></div>
+
+  <div class="dealer" id="dealer">
+    <div class="dealer_note" id="dealer_note"><img src="position_dealer_note.png"></div>
+    <div class="note_left_box"><img src="position_section.png"></div>
+  </div>
+
+  <!-- 딜러 -->
+
+  <div class="tanker_img" id="tanker_img"><img src="tanker_img.png"></div>
+
+  <div class="tanker" id="tanker">
+    <div class="tanker_note" id="tanker_note"><img src="position_tanker_note.png"></div>
+    <div class="note_left_box"><img src="position_section.png"></div>
+  </div>
+
+  <!-- 힐러 -->
+  <div class="healer_img" id="healer_img"><img src="healer_img.png"></div>
+
+  <div class="healer" id="healer">
+    <div class="healer_note" id="healer_note"><img src="position_healer_note.png"></div>
+    <div class="note_left_box"><img src="position_section.png"></div>
+  </div>
+
+
+
+
+
+  <!--js파일로 따로 빼두기-->
+
+
+  <script>
+
+
+    //딜러 첫출력
+
+    function dealeropen() {
+      document.getElementById('position_menu').style.opacity = ('0%');
+      document.getElementById('menu_ico').style.opacity = ('100%');
+      document.getElementById('dealer').style.transform = (`translateX(690px)`);
+      document.getElementById('dealer_img_01').style.opacity = ('100%');
+      document.getElementById('dealer_img_02').style.opacity = ('100%');
+      document.getElementById('dealer_img_03').style.opacity = ('100%');
+      document.getElementById('healer').style.opacity = ('0%');
+      document.getElementById('tanker').style.opacity = ('0%');
+
+      console.log('sdasd')
+    }
+
+
+    //힐러 첫출력
+
+    function healeropen() {
+      document.getElementById('position_menu').style.opacity = ('0%');
+      document.getElementById('menu_ico').style.opacity = ('100%');
+      document.getElementById('healer').style.transform = (`translateX(690px)`);
+      document.getElementById('healer_img').style.opacity = ('100%');
+      document.getElementById('tanker').style.opacity = ('0%');
+      document.getElementById('dealer').style.opacity = ('0%');
+    }
+
+
+    //탱커 첫출력
+
+    function tankeropen() {
+      document.getElementById('position_menu').style.opacity = ('0%');
+      document.getElementById('menu_ico').style.opacity = ('100%');
+      document.getElementById('tanker').style.transform = (`translateX(690px)`);
+      document.getElementById('tanker_img').style.opacity = ('100%');
+      document.getElementById('healer').style.opacity = ('0%');
+    }
+
+    //딜러 재출력
+
+    function dealeropen() {
+      document.getElementById('position_menu').style.opacity = ('0%');
+      document.getElementById('menu_ico').style.opacity = ('100%');
+      document.getElementById('dealer').style.transform = (`translateX(690px)`);
+      document.getElementById('dealer_img_01').style.opacity = ('100%');
+      document.getElementById('dealer_img_02').style.opacity = ('100%');
+      document.getElementById('dealer_img_03').style.opacity = ('100%');
+      document.getElementById('healer').style.opacity = ('0%');
+      document.getElementById('tanker').style.opacity = ('0%');
+
+      document.getElementById('position_menu').style.opacity = ('0%');
+      document.getElementById('menu_ico').style.opacity = ('100%');
+      document.getElementById('healer').style.transform = (`translateX(-690px)`);
+      document.getElementById('healer_img').style.opacity = ('0%');
+      document.getElementById('tanker').style.transform = (`translateX(-690px)`);
+      document.getElementById('tanker_img').style.opacity = ('0%');
+    }
+
+
+    //탱커 재출력
+
+    function tankerreopen() {
+      document.getElementById('position_menu').style.opacity = ('0%');
+      document.getElementById('menu_ico').style.opacity = ('100%');
+      document.getElementById('tanker').style.transform = (`translateX(690px)`);
+      document.getElementById('tanker_img').style.opacity = ('100%');
+      document.getElementById('tanker').style.opacity = ('100%');
+
+      document.getElementById('position_menu').style.opacity = ('0%');
+      document.getElementById('menu_ico').style.opacity = ('100%');
+      document.getElementById('healer').style.transform = (`translateX(-690px)`);
+      document.getElementById('healer_img').style.opacity = ('0%');
+      document.getElementById('dealer').style.transform = (`translateX(-690px)`);
+      document.getElementById('dealer_img_01').style.opacity = ('0%');
+      document.getElementById('dealer_img_02').style.opacity = ('0%');
+      document.getElementById('dealer_img_03').style.opacity = ('0%');
+    }
+
+    //힐러 재출력
+
+    function healerreopen() {
+      document.getElementById('position_menu').style.opacity = ('0%');
+      document.getElementById('menu_ico').style.opacity = ('100%');
+      document.getElementById('healer').style.transform = `translateX(690px)`
+      document.getElementById('healer_img').style.opacity = ('100%');
+      document.getElementById('healer').style.opacity = ('100%');
+
+      document.getElementById('position_menu').style.opacity = ('0%');
+      document.getElementById('tanker').style.transform = `translateX(-690px)`
+      document.getElementById('tanker_img').style.opacity = ('0%');
+      document.getElementById('dealer').style.transform = (`translateX(-690px)`);
+      document.getElementById('dealer_img_01').style.opacity = ('0%');
+      document.getElementById('dealer_img_02').style.opacity = ('0%');
+      document.getElementById('dealer_img_03').style.opacity = ('0%');
+    }
+
+
+
+
+
+
+    //공지사항
+    function noticeturn() {
+      document.getElementById('world').style.rotate = ('-45deg');
+    }
+
+    function noticeturnback() {
+      document.getElementById('world').style.rotate = ('0deg');
+    }
+
+    function clickopen() {
+      document.getElementById('notice_click').style.opacity = '100%'
+    }
+
+    function clickclose() {
+      document.getElementById('notice_click').style.opacity = '0%'
+    }
+
+
+    //세계관
+    function worldturn() {
+      document.getElementById('position').style.rotate = ('-45deg');
+    }
+
+    function worldturnback() {
+      document.getElementById('position').style.rotate = ('0deg');
+    }
+
+    function worldclickopen() {
+      document.getElementById('world_click_').style.opacity = '100%'
+    }
+
+    function worldclickclose() {
+      document.getElementById('world_click_').style.opacity = '0%'
+    }
+
+
+    //시스템
+    function systemturn() {
+      document.getElementById('system').style.rotate = ('-45deg');
+    }
+
+    function systemturnback() {
+      document.getElementById('system').style.rotate = ('0deg');
+    }
+
+    function systemclickopen() {
+      document.getElementById('system_click').style.opacity = '100%'
+    }
+
+    function systemclickclose() {
+      document.getElementById('system_click').style.opacity = '0%'
+    }
+
+    // 스크롤 애니메이션
+    window.onload = function () {
+      const elm = document.querySelectorAll('.section');
+      const elmCount = elm.length;
+      elm.forEach(function (item, index) {
+        item.addEventListener('mousewheel', function (event) {
+          event.preventDefault();
+          let delta = 0;
+
+          if (!event) event = window.event;
+          if (event.wheelDelta) {
+            delta = event.wheelDelta / 100;
+            if (window.opera) delta = -delta;
+          }
+          else if (event.detail)
+            delta = -event.detail / 3;
+
+          let moveTop = window.scrollY;
+          let elmSelector = elm[index];
+
+          // wheel down : move to next section
+          if (delta < 0) {
+            if (elmSelector !== elmCount - 1) {
+              try {
+                moveTop = window.pageYOffset + elmSelector.nextElementSibling.getBoundingClientRect().top;
+              } catch (e) { }
+            }
+          }
+          // wheel up : move to previous section
+          else {
+            if (elmSelector !== 0) {
+              try {
+                moveTop = window.pageYOffset + elmSelector.previousElementSibling.getBoundingClientRect().top;
+              } catch (e) { }
+            }
+          }
+
+          const body = document.querySelector('html');
+          window.scrollTo({ top: moveTop, left: 0, behavior: 'smooth' });
+        });
+      });
+    }
+
+
+  </script>
+
+
+</body>
+
+</html>

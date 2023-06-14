@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="notice.css">
+
+    <title>공지사항</title>
+</head>
+
+<body>
+
+
+    <!--상단-->
+    <div class="nav">
+        <div class="menu_text">
+            <div class="notice"><a href="notice.html"><img src="notice.png"></a></div>
+            <div class="world"><a href="world.html"><img src="world_top.png"></a></div>
+            <div class="position"><a href="system.html"><img src="system_top.png"></a></div>
+            <!-- <div class="system"><a href="system.html"><img src="system_top.png"></a></div> -->
+        </div>
+
+    </div>
+
+    <!--상단sns-->
+
+    <div class="sns_top">
+        <div class="eng_logo"><a href="index.html"><img src="eng_logo.png"></a></div>
+        <div class="twitter_top">
+            <a href="https://twitter.com/origin_2023"><img src="twitter_top.png"></a>
+        </div>
+        <div class="band_top">
+            <a href="https://band.us/band/90907714"><img src="band_top.png"></a>
+        </div>
+    </div>
+
+    <!--섹션-->
+
+    <div class="section">
+
+        <div class="notice_title"><img src="notice_title.png"></div>
+        <!--공지사항 3종-->
+        <div class="container">
+            <div class="notice_text" id="notice_text_01"><img src="notice_text.png"></div>
+            <div class="notice_text_02" id="notice_text_02"><img src="notice_text_02.png"></div>
+            <div class="notice_text_03" id="notice_text_03"><img src="notice_text_03.png"></div>
+        </div>
+
+        <!--누르면 이미지 교체-->
+
+        <div class="left_menu">
+            <ul>
+                <li class="first" onclick="first()"><img src="notice_btn_01.png"></li>
+                <li class="character" onclick="character()"><img src="notice_btn_02.png"></li>
+                <li class="running" onclick="running()"><img src="notice_btn_03.png"></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script>
+
+        //전체 공지사항
+        function first() {
+            document.getElementById('notice_text_01').style.display = 'block';
+            document.getElementById('notice_text_02').style.display = 'none';
+            document.getElementById('notice_text_03').style.display = 'none';
+        }
+        // 캐릭터 가이드
+        function character() {
+            document.getElementById('notice_text_02').style.display = 'block';
+            document.getElementById('notice_text_01').style.display = 'none';
+            document.getElementById('notice_text_03').style.display = 'none';
+        }
+        // 러닝 가이드
+        function running() {
+            document.getElementById('notice_text_03').style.display = 'block';
+            document.getElementById('notice_text_02').style.display = 'none';
+            document.getElementById('notice_text_01').style.display = 'none';
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>
