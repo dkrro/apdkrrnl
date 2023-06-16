@@ -195,8 +195,8 @@ body {
 }
 
 .start_11_btn{
-    position: fixed;
-    bottom: 50px;
+    position: absolute;
+    top:  10100px;
     left: 820px;
     z-index: 999;
     scale: 0.7;
