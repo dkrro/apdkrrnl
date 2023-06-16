@@ -295,7 +295,7 @@ body {
 
 .form_btn {
     top: 1250px;
-    left: 430px;
+    left: 470px;
     position: absolute;
     z-index: 9;
     scale: 0.8;
@@ -303,7 +303,7 @@ body {
 
 .form_check {
     top: 1250px;
-    left: 1170px;
+    left: 1130px;
     position: absolute;
     z-index: 9;
     scale: 0.8;
